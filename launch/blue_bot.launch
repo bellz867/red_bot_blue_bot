@@ -1,0 +1,39 @@
+<launch>
+  <node 
+    pkg="bluefish" 
+    type="front_side_error_v3.py"
+    name="front_error_node"
+    ns="blue_bot"
+  />
+  <node 
+    pkg="bluefish"
+    type="left_side_error_v3.py"
+    name="left_error_node"
+    ns="blue_bot"
+  />
+  <node 
+    pkg="bluefish"
+    type="right_side_error_v3.py"
+    name="right_error_node"
+    ns="blue_bot"
+  />
+  <node 
+    pkg="bluefish"
+    type="left_motor_measured_speed.py"
+    name="left_motor_speed_node"
+    ns="blue_bot"
+  />
+  <node 
+    pkg="bluefish"
+    type="right_motor_measured_speed.py"
+    name="right_motor_speed_node"
+    ns="blue_bot"
+  />
+  <node 
+    pkg="bluefish"
+    type="tele_motor_bluebot_1.py"
+    name="motor_commands"
+    ns="blue_bot"
+  />
+  
+</launch>
